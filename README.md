@@ -2,7 +2,7 @@
 Repositorio para practicas y problemas de la UA Administración de Servicios en Red 
 
 # Administración de Servicios en Red.
-Profesora: Tanibet de los Santos Mondragon.
+Profesora: Tanibet Pérez de los Santos Mondragon.
 tanibet.escom@gmail.com
 http://148.204.57.95/moodle
 
