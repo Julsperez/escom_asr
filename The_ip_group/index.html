@@ -2,13 +2,9 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>The IP Group</title>
@@ -18,37 +14,54 @@
     <main>
         <div class="main_container">
             <h1>The IP Group</h1>
-            <h2>1.3.6.1.2.1.4</h2>
+            <h2>1.3.6.1.2.1.2.4</h2>
             <p>En este grupo se almacena la información relativa a la capa IP, tanto de configuración como de estadísticas.</p>
         </div>
     </main>
-    <section class="ipgrp elements1" aria-labelledby="parte de Jenifer">
-        <div class="elements1">
-
+    <section class="ipgrp" aria-labelledby="parte de Jenifer">
+        <div class="elements">
+            <p class="element" data-toggle="modal" data-target="#ipForwarding">ipForwarding  - 1.3.6.1.2.1.2.4.1.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipDefaultTTL">ipDefaultTTL  - 1.3.6.1.2.1.2.4.2.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipInReceives">ipInReceives  - 1.3.6.1.2.1.2.4.3.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipInHdrErrors">ipInHdrErrors  - 1.3.6.1.2.1.2.4.4.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipInAddrErrors">ipInAddrErrors  - 1.3.6.1.2.1.2.4.5.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipForwDatagrams">ipForwDatagrams  - 1.3.6.1.2.1.2.4.6.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipInUnknownProtos">ipInUnknownProtos  - 1.3.6.1.2.1.2.4.7.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipInDiscards">ipInDiscards  - 1.3.6.1.2.1.2.4.8.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipInDelivers">ipInDelivers  - 1.3.6.1.2.1.2.4.9.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipOutRequests">ipOutRequests   - 11.3.6.1.2.1.2.4.10.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipOutDiscards">ipOutDiscards  - 11.3.6.1.2.1.2.4.11.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipOutNoRoutes">ipOutNoRoutes  - 11.3.6.1.2.1.2.4.12.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipReasmTimeout">ipReasmTimeout  - 11.3.6.1.2.1.2.4.13.0</p>
         </div>
     </section>
-    <section class="ipgrp elements2" aria-labelledby="parte de Julio">
-        <div class="elements2">
-            <p data-toggle="modal" data-target="#ipReasmReqds">
-                    ipReasmReqds - 1.3.6.1.2.1.4.1
-            </p>
+    <section class="ipgrp" aria-labelledby="parte de Julio">
+        <div class="elements">
+            <p class="element" data-toggle="modal" data-target="#ipReasmReqds">ipReasmReqds - 1.3.6.1.2.1.2.4.14.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipReasmOKs">ipReasmOKs - 1.3.6.1.2.1.2.4.15.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipReasmFails">ipReasmFails - 1.3.6.1.2.1.2.4.16.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipFragOKs">ipFragOKs - 1.3.6.1.2.1.2.4.17.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipFragFails">ipFragFails - 1.3.6.1.2.1.2.4.18.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipFragCreates">ipFragCreates - 1.3.6.1.2.1.2.4.19.0</p>
+            <p class="element" data-toggle="modal" data-target="#ipAddrTable">ipAddrTable - 1.3.6.1.2.1.2.4.20</p>
+            <p class="element" data-toggle="modal" data-target="#ipRouteTable">ipRouteTable - 1.3.6.1.2.1.2.4.21</p>
+            <p class="element" data-toggle="modal" data-target="#ipNetToMediaTable">ipNetToMediaTable - 1.3.6.1.2.1.2.4.22</p>
+            <p class="element" data-toggle="modal" data-target="#ipRoutingDiscards">ipRoutingDiscards - 1.3.6.1.2.1.2.4.23.0</p>
         </div>
-        
     </section>
 
-    
-    <!-- ***** Seccion de modales para ip_group_elements2 ***** -->
-    <div class="modal fade" id="ipReasmReqds" tabindex="-1" role="dialog" aria-labelledby="14_ipReasmReqds" aria-hidden="true">
+    <!-- ***** Seccion de modales ***** -->
+    <div class="modal fade" id="ipForwarding" tabindex="-1" role="dialog" aria-labelledby="1_ipForwarding" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3>ipReasmReqds</h3>
-                    <h5>1.3.6.1.2.1.4.1</h5>
+                    <h3>ipForwarding</h3>
+                    <h5>1.3.6.1.2.1.2.4.1.0</h5>
                 </div>
                 <div class="modal-body">
-                    <p class="descripcion">Número de fragmentos de IP recibidos que se necesitaban para reensamblar esta entidad</p>
-                    <p class="modo_acceso">Solo lectura</p>
-                    <p class="tipo_dato">Contador</p>
+                    <h5>Descripción</h5><p class="descripcion">Indica si está actuando como puerta de enlace.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Lectura-Escritura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Entero</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn" data-dismiss="modal">Regresar</button>
@@ -56,7 +69,548 @@
             </div>
         </div>
     </div>
-    <!--/ ***** Seccion de modales para ip_group_elements2 ***** -->
+    <div class="modal fade" id="ipDefaultTTL" tabindex="-1" role="dialog" aria-labelledby="2_ipDefaultTTL" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipDefaultTTL</h3>
+                    <h5>1.3.6.1.2.1.2.4.2.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">El valor default de los saltos que da el datagrama.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Lectura-Escritura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Entero</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipInReceives" tabindex="-1" role="dialog" aria-labelledby="3_ipInReceives" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipInReceives</h3>
+                    <h5>1.3.6.1.2.1.2.4.3.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion"> Nos da el número de datagramas recibidos.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipInHdrErrors" tabindex="-1" role="dialog" aria-labelledby="4_ipInHdrErrors" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipInHdrErrors</h3>
+                    <h5>1.3.6.1.2.1.2.4.4.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion"> Nos da el número de datagramas que han sido rechazados por errores en sus cabeceras IP.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipInAddrErrors" tabindex="-1" role="dialog" aria-labelledby="5_ipInAddrErrors" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipInAddrErrors</h3>
+                    <h5>1.3.6.1.2.1.2.4.5.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion"> Nos da el número de datagramas que han sido rechazados por IP's no válidas en el campo de destino.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipForwDatagrams" tabindex="-1" role="dialog" aria-labelledby="6_ipForwDatagrams" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipForwDatagrams</h3>
+                    <h5>1.3.6.1.2.1.2.4.6.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion"> : Nos da el número de datagramas que han pasado por ahí y han sido reenviados a su destino.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipInUnknownProtos" tabindex="-1" role="dialog" aria-labelledby="7_ipInUnknownProtos" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipInUnknownProtos</h3>
+                    <h5>1.3.6.1.2.1.2.4.7.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">  Nos da el número de datagramas que se han direccionado, pero han sido descartados debido a un protocolo desconocido.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipInDiscards" tabindex="-1" role="dialog" aria-labelledby="8_ipInDiscards" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipInDiscards</h3>
+                    <h5>1.3.6.1.2.1.2.4.8.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">  Nos da el número de datagramas que han sido descartados, pero que no han tenido problemas en sus cabeceras IP.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipInDelivers" tabindex="-1" role="dialog" aria-labelledby="9_ipInDelivers" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipInDelivers</h3>
+                    <h5>1.3.6.1.2.1.2.4.9.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">  Número total de datagramas de entrada que fueron exitosamente entregados a la IP del usuario.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipOutRequests" tabindex="-1" role="dialog" aria-labelledby="10_ipOutRequests" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipOutRequests</h3>
+                    <h5>1.3.6.1.2.1.2.4.10.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion"> Número total de datagramas donde la IP local del usuario  suministra a la IP en los requerimientos para transmisión.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipOutDiscards" tabindex="-1" role="dialog" aria-labelledby="11_ipOutDiscards" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipOutDiscards</h3>
+                    <h5>1.3.6.1.2.1.2.4.11.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion"> Número de salidas de datagramas de IP de las cuales no se encontró problema para prevenir su transmisión al destinatario, pero que fueron descartadas.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipOutNoRoutes" tabindex="-1" role="dialog" aria-labelledby="12_ipOutNoRoutes" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipOutNoRoutes</h3>
+                    <h5>1.3.6.1.2.1.2.4.12.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion"> Número de datagramas IP descartados por no encontrar una ruta para transmitirlos a su destino.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipReasmTimeout" tabindex="-1" role="dialog" aria-labelledby="13_ipReasmTimeout" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipReasmTimeout</h3>
+                    <h5>1.3.6.1.2.1.2.4.13.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion"> El número máximo de segundos donde se recibieron fragmentos que están retenidos mientras esperan el reensamblaje de esta entidad.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Entero</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Seccion de modales para parte 2 ***** -->
+
+    <div class="modal fade" id="ipReasmReqds" tabindex="-1" role="dialog" aria-labelledby="14_ipReasmReqds" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipReasmReqds</h3>
+                    <h5>1.3.6.1.2.1.2.4.14.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">Número de fragmentos de IP recibidos que se necesitaban para reensamblar esta entidad.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipReasmOKs" tabindex="-1" role="dialog" aria-labelledby="15_ipReasmOKs" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipReasmOKs</h3>
+                    <h5>1.3.6.1.2.1.2.4.15.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">El número de datagramas exitosamente reensamblados.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipReasmFails" tabindex="-1" role="dialog" aria-labelledby="16_ipReasmFails" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipReasmFails</h3>
+                    <h5>1.3.6.1.2.1.2.4.16.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">Número de fallas detectadas por el algoritmo de reensamble IP</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipFragOKs" tabindex="-1" role="dialog" aria-labelledby="17_ipFragOKs" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipFragOKs</h3>
+                    <h5>1.3.6.1.2.1.2.4.17.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">Número de datagramas IP que han sido fragmentados exitosamente en esta entidad.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipFragFails" tabindex="-1" role="dialog" aria-labelledby="18_ipFragFails" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipFragFails</h3>
+                    <h5>1.3.6.1.2.1.2.4.18.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">Número de datagramas IP que han sido descartados porque no se pudieron fragmentar en esta entidad.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipFragCreates" tabindex="-1" role="dialog" aria-labelledby="19_ipFragCreates" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipFragCreates</h3>
+                    <h5>1.3.6.1.2.1.4.19.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">El número de fragmentos de datagramas IP que han generado según la fragmentación esta entidad.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Solo lectura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipAddrTable" tabindex="-1" role="dialog" aria-labelledby="20_ipAddrTable" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipAddrTable</h3>
+                    <h5>1.3.6.1.2.1.2.4.20</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">El cuadro de abordar la información pertinente para direcciones IP de esta entidad.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Sin acceso</p>
+                    <h5>Tipo</h5><p class="tipo_dato">ipAddrEntry</p>
+                    <div class="tabla">
+                        <div class="table-elements" >
+                            <div class="element">
+                                <h5>ipAdEntAddr - 1.3.6.1.2.1.2.4.20.1</h5>
+                                <b>Descripción</b><p class="descripcion">La dirección IP a la que se dirige esta entrada información relativa.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Solo lectura</p>
+                                <b>Tipo</b><p class="tipo_dato">ipAddress</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipAdEntIfIndex - 1.3.6.1.2.1.2.4.20.2</h5>
+                                <b>Descripción</b><p class="descripcion">El valor de índice que identifica de forma única el interfaz a la que se aplica esta entrada. 
+                                    <br>El interfaz identificada por un valor particular de este índice es la misma interfaz identificada por elmismo valor de ifIndex. </p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Solo lectura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipAdEntNetMask - 1.3.6.1.2.1.2.4.20.3</h5>
+                                <b>Descripción</b><p class="descripcion">La máscara de subred asociada a la dirección IP de esta entrada. 
+                                <br>Valor de la máscara es una IP dirección con todos los bits de red establecidos en 1 y todos los bits de los hosts se establecen en 0.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Solo lectura</p>
+                                <b>Tipo</b><p class="tipo_dato">ipAddress</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipAdEntBcastAddr - 1.3.6.1.2.1.2.4.20.4</h5>
+                                <b>Descripción</b><p class="descripcion">El valor del bit menos significativo en la IP dirección de difusión utilizada para el envío de 
+                                    <br>datagramas en la interfaz (lógica) asociada a la IP dirección de esta entrada.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Solo lectura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipAdEntReasmMaxSize - 1.3.6.1.2.1.2.4.20.5</h5>
+                                <b>Descripción</b><p class="descripcion">El tamaño del datagrama de IP más grande que este entidad puede volver a ensamblar a partir de IP entrante fragmentada 
+                                    <br> datos recibidos en esta interfaz.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Solo lectura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipRouteTable" tabindex="-1" role="dialog" aria-labelledby="21_ipRouteTable" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipRouteTable</h3>
+                    <h5>1.3.6.1.2.1.2.4.21</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">Tabla de enrutamiento IP de esta entidad.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Sin acceso</p>
+                    <h5>Tipo</h5><p class="tipo_dato">ipRouteEntry</p>
+                    <div class="tabla">
+                        <div class="table-elements" >
+                            <div class="element">
+                                <h5>ipRouteDest - 1.3.6.1.2.1.2.4.21.1</h5>
+                                <b>Descripción</b><p class="descripcion">La dirección IP de destino de esta ruta. 0.0.0.0 es una ruta predeterminada.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">ipAddress</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteIfIndex - 1.3.6.1.2.1.2.4.21.2</h5>
+                                <b>Descripción</b><p class="descripcion">El valor de índice que identifica de forma exclusiva la interfaz, es la misma interfaz identificada por el mismo valor de ifIndex.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteMetric1 - 1.3.6.1.2.1.2.4.21.3</h5>
+                                <b>Descripción</b><p class="descripcion">Una métrica de ruta alternativa para esta ruta. Si no se usa su valor debe establecerse en -1.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">ipAddress</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteMetric2 - 1.3.6.1.2.1.2.4.21.4</h5>
+                                <b>Descripción</b><p class="descripcion">Una métrica de ruta alternativa para esta ruta. Si no se usa su valor debe establecerse en -1.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteMetric3 - 1.3.6.1.2.1.2.4.21.5</h5>
+                                <b>Descripción</b><p class="descripcion">Una métrica de ruta alternativa para esta ruta. Si no se usa su valor debe establecerse en -1.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteNextHop - 1.3.6.1.2.1.2.4.21.7</h5>
+                                <b>Descripción</b><p class="descripcion">La direccion IP de el siguiente salto de la ruta</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">IpAddress</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteType - 1.3.6.1.2.1.2.4.21.8</h5>
+                                <b>Descripción</b><p class="descripcion">Tipo de ruta: 1:other, 2:invalid, 3:direct, 4:indirect</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteProto - 1.3.6.1.2.1.2.4.21.9</h5>
+                                <b>Descripción</b><p class="descripcion">Mecanismo de enrutamiento. Valores del 1 - 14</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteAge - 1.3.6.1.2.1.2.4.21.10</h5>
+                                <b>Descripción</b><p class="descripcion">El número de segundos desde que la ruta fue actualizada por ultima vez</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteMask - 1.3.6.1.2.1.2.4.21.11</h5>
+                                <b>Descripción</b><p class="descripcion">Indica que la máscara pasa por la operación AND con la dirección destino antes de ser comparada con el campo ipRoutDest.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">IpAddress</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteMetric5 - 1.3.6.1.2.1.2.4.21.12</h5>
+                                <b>Descripción</b><p class="descripcion">Una métrica de ruta alternativa para esta ruta. Si no se usa su valor debe establecerse en -1.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipRouteInfo - 1.3.6.1.2.1.2.4.21.13</h5>
+                                <b>Descripción</b><p class="descripcion">Una referencia a las definiciones de la MIB.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Solo lectura</p>
+                                <b>Tipo</b><p class="tipo_dato">OBJECT IDENTIFIER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipNetToMediaTable" tabindex="-1" role="dialog" aria-labelledby="22_ipNetToMediaTable" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipNetToMediaTable</h3>
+                    <h5>1.3.6.1.2.1.4.22</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">La tabla de traducción de direcciones IP, se utiliza para la asignación de direcciones IP a direcciones físicas.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Sin acceso</p>
+                    <h5>Tipo</h5><p class="tipo_dato">IpNetToMediaEntry</p>
+                    <div class="tabla">
+                        <div class="table-elements" >
+                            <div class="element">
+                                <h5>ipNetToMediaIfIndex - 1.3.6.1.2.1.4.22.1</h5>
+                                <b>Descripción</b><p class="descripcion">Indica el índice de cada uno de las asignaciones (entradas).</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura - escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipNetToMediaPhysAddress - 1.3.6.1.2.1.4.22.2</h5>
+                                <b>Descripción</b><p class="descripcion">El valor de índice que identifica de forma única el interfaz a la que se aplica esta entrada.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura y escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">IpAddress</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipNetToMediaNetAddress - 1.3.6.1.2.1.4.23.3</h5>
+                                <b>Descripción</b><p class="descripcion">Dirección IP correspondiente a la dirección física.</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura y escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">IpAddress</p>
+                            </div>
+                            <div class="element">
+                                <h5>ipNetToMediaType - 1.3.6.1.2.1.4.24.4</h5>
+                                <b>Descripción</b><p class="descripcion">Indica el tipo de asignación de la entrada. 1:other, 2:invalid, 3:dynamic, 4:static</p>
+                                <b>Modo de acceso</b><p class="modo_acceso">Lectura y escritura</p>
+                                <b>Tipo</b><p class="tipo_dato">Entero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ipRoutingDiscards" tabindex="-1" role="dialog" aria-labelledby="23_ipRoutingDiscards" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>ipRoutingDiscards</h3>
+                    <h5>1.3.6.1.2.1.4.23.0</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Descripción</h5><p class="descripcion">Indica el número de entradas de enrutamiento que se van a  descartar aunque sean válidas.</p>
+                    <h5>Modo de acceso</h5><p class="modo_acceso">Solo escritura</p>
+                    <h5>Tipo</h5><p class="tipo_dato">Contador</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ ***** Seccion de modales ***** -->
     
     <!-- Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
