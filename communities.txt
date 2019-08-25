@@ -1,0 +1,8 @@
+SO, host_name, community_name
+
+Ubuntu, @batcomputer: '4CM3_community'
+
+VIRTUAL MACHINES @batcomputer:
+  Kali, @vmKali: 'kali_snmp'
+  Windows10, @vmWindows: 'win_snmp_community'
+
